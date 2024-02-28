@@ -38,3 +38,25 @@ function factorialNumero(numero) {
 
 let resFactorial = factorialNumero(numInput);
 alert(`El factorial del numero ${numInput} es ${resFactorial}`);
+
+/**
+ * 3 - funcion para convertir un valor en dolares y devolver la conversion
+ * 
+ */
+
+
+/**
+ * 4 - Funcion que muestre en pantalla el area y el perimetro de una sola rectangular, utilizar
+ * altura, anchura que se proporciona
+ */
+
+
+/**
+ * 5 - Crea una funcion que muestre en pantalla el area y el perimetro de una sala circular
+ * el radio como parametro
+ */
+
+
+/**
+ * 6 - Funcion que muestre en pantalla la tabla de multiplicar de un numero dado como parametro
+ */
