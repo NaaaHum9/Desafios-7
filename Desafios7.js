@@ -41,9 +41,19 @@ alert(`El factorial del numero ${numInput} es ${resFactorial}`);
 
 /**
  * 3 - funcion para convertir un valor en dolares y devolver la conversion
- * 
  */
+alert('FUncion convertir dolares');
+let numInputConvertir = parseInt(prompt("Ingrese la cantidad de dolares a convertir: "));
 
+function convertirContidad(convertir) {
+    let factorConversion = 16;
+    let conversion;
+
+    return conversion = convertir * factorConversion;
+}
+
+let numConversion = convertirContidad(numInputConvertir);
+alert(`La converison de la cantidad ${numInput} es ${numConversion}`);
 
 /**
  * 4 - Funcion que muestre en pantalla el area y el perimetro de una sola rectangular, utilizar
