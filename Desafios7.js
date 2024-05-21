@@ -48,18 +48,44 @@ let numInputConvertir = parseInt(prompt("Ingrese la cantidad de dolares a conver
 function convertirContidad(convertir) {
     let factorConversion = 16;
     let conversion;
-
     return conversion = convertir * factorConversion;
 }
 
 let numConversion = convertirContidad(numInputConvertir);
-alert(`La converison de la cantidad ${numInput} es ${numConversion}`);
+alert(`La converison de la cantidad ${numInputConvertir} es ${numConversion}`);
 
 /**
  * 4 - Funcion que muestre en pantalla el area y el perimetro de una sola rectangular, utilizar
  * altura, anchura que se proporciona
  */
+alert('Area y perimetro de una sala rectangular');
 
+function askTheWidth() {
+    let widthRectangle = parseInt(prompt("Enter the triangle width: "));
+    return widthRectangle;
+}
+
+function askTheLength() {
+    let lengthRectangle = parseInt(prompt("Enter the triangle width: "));
+    return lengthRectangle;
+}
+
+function calculatingPerimeter(Width, Length) {
+    let numPerimeter = ((Width + Length)*2);
+    return numPerimeter;
+}
+
+function calculatingArea(Width, Length) {
+    let numArea = (Width * Length);
+    return numArea;
+}
+
+let numWidth = askTheWidth();
+let numLength = askTheLength();
+let numPerimeter = calculatingPerimeter(numWidth, numLength);
+alert(`The perimeter of the livingroom is: ${numPerimeter}`);
+let numArea = calculatingArea(numWidth, numLength);
+alert(`The area of the livingroom is: ${numArea}`);
 
 /**
  * 5 - Crea una funcion que muestre en pantalla el area y el perimetro de una sala circular
