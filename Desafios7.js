@@ -91,8 +91,45 @@ alert(`The area of the livingroom is: ${numArea}`);
  * 5 - Crea una funcion que muestre en pantalla el area y el perimetro de una sala circular
  * el radio como parametro
  */
+alert('Area and perimeter of a livingroom circular');
 
+function askTheRadioACircule() {
+    let radioCirculeRoom = parseFloat(prompt("Enter the radio of the circule"));
+    return radioCirculeRoom;
+}
+
+function areTheCirculeRoom(radioCircule) {
+    let areaCirculeRoom =   Math.PI * radioCircule;
+    return areaCirculeRoom;
+}
+
+function perimeterTheCirculeRoom(radioCircule) {
+    let perimeterCirculeRoom = 2 * (Math.PI*radioCircule);
+    return perimeterCirculeRoom;
+}
+
+let radioRoom = askTheRadioACircule();
+let perimeterRoom = perimeterTheCirculeRoom(radioRoom);
+alert(`The perimeter of the circule livingroom is: ${perimeterRoom}`);
+let areaRoom = areTheCirculeRoom(radioRoom);
+alert(`The area of the circule livingroom is: ${areaRoom}`);
 
 /**
  * 6 - Funcion que muestre en pantalla la tabla de multiplicar de un numero dado como parametro
  */
+
+alert('Multiplication tables');
+
+function askNumberForTable() {
+    let numberTable = parseInt(prompt("Enter the number for the multiplication table"));
+    return numberTable;
+}
+
+function multiplicationTable(numberTable) {
+    for (let i = 1; i <= 10; i++) {
+        alert(`${numberTable} x ${i} = ${numberTable*i}`);
+    }
+}
+
+let numTable = askNumberForTable();
+multiplicationTable(numTable)
